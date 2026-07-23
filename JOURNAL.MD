@@ -21,3 +21,21 @@ I read the issue comments, the issue is recorded so the cohort can see what I am
 **Setup confirmation:** App runs locally at localhost:5173
 
 **Cohort ledger:** Issue added to cohort ledger
+
+## Week 8 — Reproduction & solution planning
+
+**Reproduction commit link:** 
+<!-- [link to commit documenting the reproduced issue] -->
+
+**Reproduction summary:**
+<!-- [1–2 sentences: How did you reproduce the issue? What did you observe?] -->
+I reproduced the bug by opening the api md file in the path pathreview/docs/API.md. I observed that curl commands for the API endpoints are missing, so developers setting up the project for the first time can't quickly verify the API is working.
+
+**PLAN.md link:** 
+<!-- [link to PLAN.md in your fork] -->
+
+**Walkthrough video (recommended):** 
+<!-- [link to your Loom video, ≤2 min — recommended, not graded] -->
+
+**Blockers or open questions:**
+<!--[Anything you're still uncertain about going into Week 9, or leave blank] -->
