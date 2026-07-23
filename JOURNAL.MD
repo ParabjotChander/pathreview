@@ -26,6 +26,7 @@ I read the issue comments, the issue is recorded so the cohort can see what I am
 
 **Reproduction commit link:** 
 <!-- [link to commit documenting the reproduced issue] -->
+https://github.com/ParabjotChander/pathreview/commit/872088b9d7f3089c33b7e60c9def4975a47b2458 
 
 **Reproduction summary:**
 <!-- [1–2 sentences: How did you reproduce the issue? What did you observe?] -->
@@ -33,9 +34,11 @@ I reproduced the bug by opening the api md file in the path pathreview/docs/API.
 
 **PLAN.md link:** 
 <!-- [link to PLAN.md in your fork] -->
+https://github.com/ParabjotChander/pathreview/blob/docs/117-update-api-guide/PLAN.md
 
 **Walkthrough video (recommended):** 
 <!-- [link to your Loom video, ≤2 min — recommended, not graded] -->
+https://youtu.be/MFJTEtYZdf4 
 
 **Blockers or open questions:**
 <!--[Anything you're still uncertain about going into Week 9, or leave blank] -->
