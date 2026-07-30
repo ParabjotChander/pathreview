@@ -42,7 +42,7 @@ Break it into 3–5 concrete sub-tasks.
 
 3. Create the curl commands. Start the docker containers and run the app on one CLI, run the curl commands on another CLI to test them. If the curl command doesn't work, for example, a review contents isn't retrieved with a valid review id in the CLI, I will know a error occurs by the output. This means my curl command doesn't work and I will have to change it. 
 
-4. Add the successfully tested curl commands on the CLI to the API.md file in the path pathreview/docs/API.md. 
+4. Add the successfully tested curl commands on the CLI to the API.md file in the path pathreview/docs/API.md and return the HTTP response codes or anything the developer needs to know.
 
 ### Inputs & outputs
 What does your fix take as input? What should it produce or change?
