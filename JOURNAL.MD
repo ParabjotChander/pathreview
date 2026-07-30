@@ -42,3 +42,22 @@ https://youtu.be/MFJTEtYZdf4
 
 **Blockers or open questions:**
 <!--[Anything you're still uncertain about going into Week 9, or leave blank] -->
+
+## Week 9 — Solution building & PR submission
+
+### Check-in 1 (mid-week)
+
+**Current progress:**
+[What have you implemented so far? Which sub-tasks from PLAN.md are done?]
+
+I have implemented the solution, meaning the sub-tasks are done from the PLAN.md file. Each api endpoint in the docs/API.md file has a sample curl command. I tested each curl command by manually entering it in the terminal and conducted CLI tests.
+
+**Next steps:**
+[What are you working on for the rest of the week?]
+
+For the rest of the week, I have to create a demo video where I will run a sample curl command as an example to show my work. Next, I will create a draft PR, receive feedback from my draft. Lastly, I will create and submit my final pull request.
+
+**Blockers:**
+[Anything slowing you down? Or leave blank.]
+
+Nothing is slowing me down currently.
