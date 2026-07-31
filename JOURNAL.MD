@@ -61,3 +61,29 @@ For the rest of the week, I have to create a demo video where I will run a sampl
 [Anything slowing you down? Or leave blank.]
 
 Nothing is slowing me down currently.
+
+### Check-in 2 (end of week)
+
+**PR link:** [link to your submitted pull request]
+
+https://github.com/ascherj/pathreview/pull/411 
+
+**Branch:** [the branch name you worked on, e.g. `fix/123-short-description`]
+
+`docs/117-update-api-guide`
+
+**What you built:**
+[1–3 sentences summarizing what your fix does and how it works]
+
+Updated docs/API.md to include sample curl commands and expected HTTP response codes for each API endpoint. This provides developers with ready-to-use commands and necessary context to quickly verify that the API is functioning properly on port 8000.
+
+**Tests added or updated:**
+[Which test files did you touch? What do they cover?]
+
+I didn't touch any test files but manually checked my work on the terminal and through the logs. I started the Docker containers and executed test requests against the application across two CLI sessions. Confirmed successful endpoint functionality by observing 2xx HTTP response codes in the application logs for each curl command executed. I ran `make check` and `make test-unit` to note which failures exist before I started the fix. After my changes, I ran both commands again and confirmed my changes didn't introduce any new failures.
+
+**Self-review confirmation:** [X] make check passes  [X] make test-unit passes
+
+**Draft PR feedback received from:** [name or Slack handle, or "none"]
+
+none
