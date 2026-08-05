@@ -87,3 +87,51 @@ I didn't touch any test files but manually checked my work on the terminal and t
 **Draft PR feedback received from:** [name or Slack handle, or "none"]
 
 none
+
+## Week 10 — Iteration & reflection
+
+### Reviewer feedback
+
+**Feedback received:** [ ] Yes  [X] No — still awaiting review
+
+**Summary of feedback:**
+[What did reviewers comment on? Or note that no review came in.]
+
+No feedback
+
+**How you responded:**
+[What changes did you make, or what did you reply? If no feedback,
+leave blank.]
+
+---
+
+### Reflection
+
+**What was harder than you expected?**
+[Be specific — what part of the process, codebase, or workflow
+surprised you?]
+
+Environment setup proved more challenging than expected due to legacy Node.js (v16.17.0) and npm (8.15.0) versions on my local macOS system, which caused runtime errors when launching the Docker containers. Even after installing updated versions, the project continued defaulting to the old binaries. Resolving this required inspecting and modifying my $PATH environment variable in the terminal to prioritize the updated version. Diagnosing this path resolution issue took significant troubleshooting time during Week 7 due to system configuration quirks on an older version of macOS.
+
+**What did you learn about working in a large codebase?**
+[What's different about contributing to someone else's production code
+vs. building your own project?]
+
+What's different about contributing to someone else's production code vs building your own project is that you have less freedom when working on production code. You have to follow their coding conventions/style, such as the function/variable naming style. If the linter test fails, this means you haven't followed their coding style and will have to make changes before you push the code. Working in large codebases can be scary, I learned to not jump to the code right away, you need to spent time to understand what the application is doing.
+
+**How did AI tools help — and where did they fall short?**
+[Where was AI assistance most useful this module? Where did you need
+to go beyond what AI could give you?]
+
+I asked Claude AI to review the database models in `core/model/profile.py`, `core/model/review.py`, `core/model/user.py`, and `core/model/ingested_source.py` to map out their column names and data types. For each table schema, Claude provided the column names, data types, nullability, default values, and primary/foreign key designations to help me navigate and better understand the PostgreSQL database. However, the AI missed a crucial detail: it didn't note that the `POST /auth/login` endpoint returns an authentication token required for subsequent requests. As a result, my initial manual curl tests failed with HTTP error codes because the required authorization header `-H "Authorization: Bearer <YOUR_TOKEN>"` was missing.
+
+**What would you do differently if you started over?**
+[Issue selection, planning, implementation, or process — anything
+you'd change?]
+
+I would have created my virtual environment using a specific python version in the command. I used `python -m venv .venv`, since I have python 3.12 and 3.14 on my local machine, the virtual environment installed both versions and my virtual environment folder was corrupted. Python 3.14 isn't compatible with FastAPI so when I ran the API on localhost port 8000, I got runtume errors. I had to delete and recreate the virtual enviroment using `python3.12 -m venv .venv`, installed the dependencies again from the `pyproject.toml` file.
+
+**What are you most proud of from this module?**
+[One thing — it doesn't have to be the PR itself.]
+
+I am most proud of is my curl commands added in 'docs/API.md' were manually tested and I can explain each api endpoints function/purpose. For example, when I ran `curl http://localhost:8000/health`, I received the service status and dependency health for each docker containers: vector db, redis and postgres db. I was able to create a video where I actually did a live demo on my curl commands, showed the output in the terminal, one of the json outputs on one CLI and of the application running CLI, showing HTTP 2xx.
